@@ -3,15 +3,23 @@
 Wallpaper by [Dablim](http://www.deviantart.com/art/Simple-GNU-Linux-Wallpaper-336558602) ([CC-BY](http://creativecommons.org/licenses/by/3.0/)) - **[Screenshots](https://github.com/robotanarchy/penguinphone/issues/1)**
 
 # penguinphone
-Simple GNU/Linux Userland for Smartphones
 
 ### Motivation
-
+Dissatisfaction with the current world of smartphone software. This project is slowly heading towards a full GNU/Linux distribution for smartphones with the following objectives.
+* Compatibility with normal Linux programs. Firefox for example *should just work* out of the box.
+* Minimalism: Minimal dependencies, minimal lines of code. More Lines of Code always mean more bugs!
+* Fast Prototyping: Get a working system fast. Use more bloated components and replace them later, if necessary.
+* Forward Compatibility: X11 is slowly dying, make everything Wayland compatible
+* Tested Code: Try to use tested code, where possible. If feasible, write testsuites for componentes, that we build on.
+* Modularity
+* Lots of optional configuration options for the user
+* Contributing to upstream OSS projects
+* Security: Provide an as-secure-as-possible system. Enjoy these buzzwords: Full disk encryption, support existing state-of-the-art cryptographic communication software, reproducible builds, [libreboot](https://libreboot.org/) running (this should only take a few hundred years), warning the user that phone calls and SMS are fully unencrypted etc. (Please note, that no security related software has been written yet for penguinphone.)
 
 ### Requirements
-* [X.org](x.org) (to be replaced with: [Wayland](https://wayland.freedesktop.org/))
-* [i3](http://i3wm.org/) >= 4.11 (to be replaced with: [Sway](https://github.com/SirCmpwn/sway))
-* [Font Awesome](http://fontawesome.io/) (because it was packaged in Debian, Arch and Void and the Unicode codes can be looked up easily)
+* [X.org](x.org) (to be replaced with [Wayland](https://wayland.freedesktop.org/))
+* [i3](http://i3wm.org/) >= 4.11 (to be replaced with [Sway](https://github.com/SirCmpwn/sway) once it is compatible enough)
+* [Font Awesome](http://fontawesome.io/) (...because it was packaged in Debian, Arch and Void and the Unicode codes can be looked up easily)
 * [Elementary](https://www.enlightenment.org/about-efl) (Toolkit from the Enlightenment Desktop)
 
 
