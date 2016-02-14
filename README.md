@@ -14,7 +14,7 @@ Simple GNU/Linux Userland for Smartphones
 ### Test Environment
 
 ### Real Hardware Installation
-* Install an up-to-date, **real** Linux distribution (not you, Android; check the Requirements from above) on your smartphone. For the N900, that would be [debian900](https://github.com/dderby/debian900) (If you get it working with others, let me know!). The installation is not that easy, you can **brick your device** and what not, so you should probably run the *Test Environment* (see above) first.
+* Install an up-to-date, **real** Linux distribution (not you, Android! Check the *Requirements* from above) on your smartphone. For the N900, that would be [debian900](https://github.com/dderby/debian900) (If you get it working with others, let me know!). The installation is not that easy, you can **brick your device** and what not, so you should probably run the *Test Environment* (see above) first.
 
 * Install the dependencies. For debian900:
 ```shell
