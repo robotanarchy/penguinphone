@@ -45,8 +45,8 @@
                 ...
 */
 
-void alttab_init_callback(bool is_event_reply, uint32_t message_type,
-                          char *payload, void *userdata) {
+void winlist_init_callback(bool is_event_reply, uint32_t message_type,
+                           char *payload, void *userdata) {
   winlist_entry_t **list = (winlist_entry_t **)userdata;
 
   winlist_entry_t *last = NULL;
@@ -86,7 +86,7 @@ void alttab_init_callback(bool is_event_reply, uint32_t message_type,
 winlist_entry_t *winlist_init(int sock) {
   winlist_entry_t *list = NULL;
   wm_ipc_send(sock, WM_IPC_MSG_TREE, NULL);
-  wm_ipc_recv_handle(sock, alttab_init_callback, &list, true);
+  wm_ipc_recv_handle(sock, winlist_init_callback, &list, true);
   return list;
 }
 
