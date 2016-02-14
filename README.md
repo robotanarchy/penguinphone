@@ -9,6 +9,10 @@ Simple GNU/Linux Userland for Smartphones
 
 
 ### Requirements
+* [X.org](x.org) (to be replaced with: [Wayland](https://wayland.freedesktop.org/))
+* [i3](http://i3wm.org/) >= 4.11 (to be replaced with: [Sway](https://github.com/SirCmpwn/sway))
+* [Font Awesome](http://fontawesome.io/) (because it was packaged in Debian, Arch and Void and the Unicode codes can be looked up easily)
+* [Elementary](https://www.enlightenment.org/about-efl) (Toolkit from the Enlightenment Desktop)
 
 
 ### Test Environment
