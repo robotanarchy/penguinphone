@@ -13,14 +13,14 @@ Simple GNU/Linux Userland for Smartphones
 
 ### Test Environment
 Unlike most modern smartphone operating systems, you don't need to run a fully bloated virtual machine for development.
-Just install all the dependencies from above, and [Xephyr](https://en.wikipedia.org/wiki/Xephyr) (which is packaged on most distributions) to run another X server inside your regular X server. Then clone and compile:
+Just install all the dependencies from above on your desktop Linux, and [Xephyr](https://en.wikipedia.org/wiki/Xephyr) (which is packaged on most distributions) to run another X server inside your regular X server. Then clone and compile:
 ```shell
 git clone https://github.com/robotanarchy/penguinphone
 cd penguinphone
 make testenv # compiles everything and runs Xephyr
 ```
 
-For serious development, installing valgrind is recommended. Inside the running penguinphone environment, you can run the testsuite with `make testsuite`.
+For serious development, installing [valgrind](http://valgrind.org/) is necessary. Inside the running penguinphone environment, you can run the testsuite with `make testsuite`.
 
 
 ### Real Hardware Installation
