@@ -16,6 +16,9 @@ Dissatisfaction with the current world of smartphone software. This project is s
 * Contributing to upstream OSS projects
 * Security: Provide an as-secure-as-possible system. Enjoy these buzzwords: Full disk encryption, support existing state-of-the-art cryptographic communication software, reproducible builds, [libreboot](https://libreboot.org/) running (this should only take a few hundred years), warning the user that phone calls and SMS are fully unencrypted etc. (Please note, that no security related software has been written yet for penguinphone.)
 
+### Status
+Right now, i3 is somewhat extended to be usable on a smartphone. The code is tested, highly efficient and we have a nice environment for further development. See the [screenshots](https://github.com/robotanarchy/penguinphone/issues/1) for details.
+
 ### Requirements
 * [X.org](x.org) (to be replaced with [Wayland](https://wayland.freedesktop.org/))
 * [i3](http://i3wm.org/) >= 4.11 (to be replaced with [Sway](https://github.com/SirCmpwn/sway) once it is compatible enough)
