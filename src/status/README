@@ -1,0 +1,3 @@
+Status line generator for i3-compatible window managers.
+
+Only dependency is libc.

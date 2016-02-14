@@ -1,0 +1,19 @@
+#
+# When running on real hardware, copy this file to ~/.xinitrc and adjust
+# it accordingly! Otherwise you shouldn't need to modify it.
+#
+
+# Uncomment and change to where you have checked out the source
+# cd ~/penguinphone
+
+# Custom keyboard layout
+# setxkbmap de &
+
+# Hide mouse cursor automatically
+unclutter -idle 1 &
+
+# Set the wallpaper
+feh --bg-center artwork/wallpaper_800x480.jpg &
+
+# Start i3
+i3 -c configs/i3.cfg > /dev/null
