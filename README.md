@@ -5,7 +5,7 @@ Wallpaper by [Dablim](http://www.deviantart.com/art/Simple-GNU-Linux-Wallpaper-3
 # penguinphone
 
 ### Motivation
-Dissatisfaction with the current world of smartphone software. This project is slowly heading towards a full GNU/Linux distribution for smartphones with the following objectives.
+Dissatisfaction with the current world of smartphone software. This project is slowly heading towards a full GNU/Linux userland for smartphones with the following objectives.
 * Compatibility with normal Linux programs. Firefox for example *should just work* out of the box.
 * Minimalism: Minimal dependencies, minimal lines of code. More Lines of Code always mean more bugs!
 * Fast Prototyping: Get a working system fast. Use more bloated components and replace them later, if necessary.
