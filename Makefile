@@ -4,13 +4,13 @@ VG:="valgrind --track-origins=yes --leak-check=full"
 
 all: common
 	mkdir -p bin
-	CC=$(CC) make -C src/status
-	CC=$(CC) make -C src/alttab
-	CC=$(CC) make -C src/launcher
+	CC=$(CC) $(MAKE) -C src/status
+	CC=$(CC) $(MAKE) -C src/alttab
+	CC=$(CC) $(MAKE) -C src/launcher
 
 common:
 	mkdir -p obj
-	CC=$(CC) make -C src/common
+	CC=$(CC) $(MAKE) -C src/common
 
 testenv: all
 	./testenv.sh stop || true
@@ -19,9 +19,9 @@ testenv: all
 
 testsuite: common
 	mkdir -p bin
-	VG=$(VG) CC=$(CC) make -C src/alttab testsuite
-	VG=$(VG) CC=$(CC) make -C src/launcher testsuite
-	VG=$(VG) CC=$(CC) make -C src/status testsuite
+	VG=$(VG) CC=$(CC) $(MAKE) -C src/alttab testsuite
+	VG=$(VG) CC=$(CC) $(MAKE) -C src/launcher testsuite
+	VG=$(VG) CC=$(CC) $(MAKE) -C src/status testsuite
 
 
 clean:
