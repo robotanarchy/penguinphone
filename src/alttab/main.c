@@ -29,7 +29,7 @@ typedef struct {
 } callback_data_t;
 
 #define CMD_BUFFER_SIZE 60
-static void callback_activated(void *data, Evas_Object *obj, void *event_info) {
+static void callback_selected(void *data, Evas_Object *obj, void *event_info) {
   callback_data_t *cb_data = (callback_data_t *)data;
 
   winlist_entry_t *open_windows = cb_data->open_windows;
@@ -84,8 +84,7 @@ int main(int argc, char **argv) {
   callback_data_t *cb_data = malloc(sizeof(callback_data_t));
   cb_data->sock = wm_ipc_connect();
   cb_data->open_windows = winlist_init(cb_data->sock);
-  evas_object_smart_callback_add(list, "activated", callback_activated,
-                                 cb_data);
+  evas_object_smart_callback_add(list, "selected", callback_selected, cb_data);
 
   // fill the list
   winlist_entry_t *current = cb_data->open_windows;

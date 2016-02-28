@@ -21,7 +21,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-static void callback_activated(void *data, Evas_Object *obj, void *event_info) {
+static void callback_selected(void *data, Evas_Object *obj, void *event_info) {
   const Eina_List *items = elm_list_items_get(obj);
 
   launcher_entry_t *current = (launcher_entry_t *)data;
@@ -70,7 +70,7 @@ int main(int argc, char **argv) {
   elm_box_pack_end(box, list);
 
   // add callback
-  evas_object_smart_callback_add(list, "activated", callback_activated, config);
+  evas_object_smart_callback_add(list, "selected", callback_selected, config);
 
   // fill the list
   launcher_entry_t *current = config;
